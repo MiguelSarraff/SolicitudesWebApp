@@ -1,0 +1,46 @@
+<h1 class="m-2">Carreras Registradas  :</h1>
+<div class="content">
+    <mat-card-title>
+        
+    </mat-card-title>
+    <mat-divider> </mat-divider>
+
+    <mat-card-content class="mt-2">
+
+        <div class="mat-elevation-z8">
+            <table mat-table [dataSource]="dataSource">
+          
+              
+              <ng-container matColumnDef="CarreraNombre">
+                <th mat-header-cell *matHeaderCellDef> Nombre </th>
+                <td mat-cell *matCellDef="let element"> {{element.carreraNombre}} </td>
+              </ng-container>
+              <ng-container matColumnDef="CarreraCodigo">
+                <th mat-header-cell *matHeaderCellDef> Codigo </th>
+                <td mat-cell *matCellDef="let element"> {{element.carreraCodigo}} </td>
+              </ng-container>
+              <ng-container matColumnDef="Estado">
+                <th mat-header-cell *matHeaderCellDef> Estado </th>
+                <td mat-cell *matCellDef="let element"> {{element.estado ==1 ? 'Activa':'Inactivo' }} </td>
+              </ng-container>
+              <ng-container matColumnDef="acciones">
+                <th mat-header-cell *matHeaderCellDef> Acciones </th>
+                <td mat-cell *matCellDef="let element"></td>
+              </ng-container>
+
+          
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+          
+            <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                           showFirstLastButtons
+                           aria-label="Seleccione Carreras">
+            </mat-paginator>
+          </div>   
+
+    </mat-card-content>
+
+
+
+</div>
