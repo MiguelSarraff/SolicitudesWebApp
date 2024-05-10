@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WH1+V+VX6cdCgHH6p4/qTDvHLs/pWdHkvm6huLJDPbmLbV7pTmSxZcqrTV8GrBiNAWpt4/+nR5o/NCC00YEPiQ==",
+  "dgSpecHash": "sOVI1Wugu8sXdQyfSlgS6Avxf+tlayCuWxTxu1eOP0xvBoSYvAkwOI3rgaUMlMpVqDmyp6ju6OObSz5tzfiwrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj",
+  "projectFilePath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msarraff\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\msarraff\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

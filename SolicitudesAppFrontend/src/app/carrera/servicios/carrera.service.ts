@@ -10,7 +10,7 @@ import { Carrera } from '../interfaces/carrera';
 })
 export class CarreraService {
 
-  baseUrl: string = enviroment.apiUrl + 'carrera/'
+  baseUrl: string = enviroment.apiUrl + 'carrera/';
 
   constructor(private http: HttpClient) { }
 

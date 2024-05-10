@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj": {}
+    "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj": {
+    "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj",
+        "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\msarraff\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\obj\\",
+        "outputPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\msarraff\\AppData\\Roaming\\NuGet\\NuGet.Config",

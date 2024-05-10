@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\BLL\\BLL.csproj": {}
+    "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\BLL\\BLL.csproj": {
+    "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\BLL\\BLL.csproj",
+        "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\msarraff\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\BLL\\obj\\",
+        "outputPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\msarraff\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Data\\Data.csproj"
+              "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Data\\Data.csproj": {
+                "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Data\\Data.csproj"
               },
-              "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj"
+              "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj": {
+                "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj"
               },
-              "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj"
+              "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj": {
+                "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Data\\Data.csproj": {
+    "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Data\\Data.csproj",
+        "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\msarraff\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Data\\obj\\",
+        "outputPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\msarraff\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,8 +93,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj"
+              "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj": {
+                "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj"
               }
             }
           }
@@ -154,14 +154,14 @@
         }
       }
     },
-    "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj": {
+    "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj",
+        "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\msarraff\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\obj\\",
+        "outputPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\msarraff\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -225,14 +225,14 @@
         }
       }
     },
-    "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj": {
+    "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj",
+        "projectUniqueName": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj",
         "projectName": "Utilidades",
-        "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj",
+        "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj",
         "packagesPath": "C:\\Users\\msarraff\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Utilidades\\obj\\",
+        "outputPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Utilidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\msarraff\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -249,8 +249,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj"
+              "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj": {
+                "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj"
               }
             }
           }

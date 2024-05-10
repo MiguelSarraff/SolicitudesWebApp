@@ -4324,11 +4324,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\API\\API.csproj",
+      "projectUniqueName": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\API\\API.csproj",
+      "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\API\\API.csproj",
       "packagesPath": "C:\\Users\\msarraff\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\API\\obj\\",
+      "outputPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\msarraff\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4345,17 +4345,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\BLL\\BLL.csproj"
+            "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\BLL\\BLL.csproj"
             },
-            "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Data\\Data.csproj"
+            "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Data\\Data.csproj": {
+              "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Data\\Data.csproj"
             },
-            "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Models\\Models.csproj"
+            "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj": {
+              "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Models\\Models.csproj"
             },
-            "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj": {
-              "projectPath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj"
+            "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj": {
+              "projectPath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\Utilidades\\Utilidades.csproj"
             }
           }
         }

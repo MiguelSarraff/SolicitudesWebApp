@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v3RwFPOBs2Dx7tX4YI/94O38IpoM9nJ7FFiGiC0qz37tpQpei3SDhUe3pkvEGxyosGplHodSSxBwx+LuQODJtA==",
+  "dgSpecHash": "JxPM1jgR0Q4yay6+LM5AzttugNg/FzKAt87lJ5N9BWFoZkG9U6vQhtt3sv/CZrKFserj7+vzRyN5Ziz953x3mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\msarraff\\source\\repos\\SolicitudesAppBackend\\API\\API.csproj",
+  "projectFilePath": "C:\\SolicitudesWebApp\\SolicitudesAppBackend\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msarraff\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\msarraff\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\API",
+    "\\API\\Controllers",
+    "\\API\\Extensiones",
+    "\\BLL",
+    "\\BLL\\Servicios",
+    "\\BLL\\Servicios\\Interfaces",
+    "\\Models",
+    "\\Models\\DTOs"
+  ],
+  "SelectedNode": "\\SolicitudesAppBackend.sln",
+  "PreviewInSolutionExplorer": false
+}
