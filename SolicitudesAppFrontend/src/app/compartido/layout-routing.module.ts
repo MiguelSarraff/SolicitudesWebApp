@@ -7,6 +7,8 @@ import { SolicitudesComponent } from '../solicitudes/pages/solicitudes/solicitud
 import { PerfilComponent } from '../perfil/pages/perfil/perfil.component';
 import { ListadoCarreraComponent } from '../carrera/pages/listado-carrera/listado-carrera.component';
 import {} from '../carrera/carrera.module';
+import {} from '../profesor/profesor.module';
+import { ListadoProfesorComponent } from '../profesor/pages/listado-profesor/listado-profesor.component';
 
 
 const routes: Routes = [
@@ -17,6 +19,7 @@ const routes: Routes = [
     {path: 'carreras', component: ListadoCarreraComponent, pathMatch: 'full'},
     {path: 'solicitudes',component:SolicitudesComponent,pathMatch:'full'},
     {path: 'perfil', component:PerfilComponent,pathMatch:'full'},
+    {path: 'Profesores', component:ListadoProfesorComponent, pathMatch: 'full'},
     {path: '**',redirectTo: '', pathMatch:'full'}
    ]
  } 

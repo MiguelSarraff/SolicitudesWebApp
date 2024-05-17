@@ -10,6 +10,12 @@ namespace Data.Interfaces.IRepositorio
     {
         ICarreraRepositorio Carrera { get; }
 
+        IMateriaRepositorio Materia { get; }
+
+        IProfesorRepositorio Profesor { get; }
+
+
+
         Task Guardar();
     }
 }

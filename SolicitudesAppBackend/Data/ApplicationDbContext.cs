@@ -20,6 +20,9 @@ namespace Data
 
         public DbSet<Carrera> Carreras { get; set; }
 
+        public DbSet<Materia>  Materias { get; set; }
+
+        public DbSet<Profesor> Profesores { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -38,7 +38,7 @@ namespace BLL.Servicios
                 await _unidadTrabajo.Carrera.Agregar(carrera);
                 await _unidadTrabajo.Guardar();
                 if (carrera.Id == 0)
-                    throw new TaskCanceledException("La carrera no se pudo crear");
+                    throw new TaskCanceledException("La Carrera no se pudo crear");
                 return _mapper.Map<CarreraDto>(carrera);
             }
             catch (Exception)

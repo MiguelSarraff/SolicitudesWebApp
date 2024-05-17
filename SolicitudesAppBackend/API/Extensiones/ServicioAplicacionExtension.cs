@@ -77,7 +77,9 @@ namespace API.Extensiones
             services.AddAutoMapper(typeof(MappingProfile));
 
             services.AddScoped<ICarreraServicio, CarreraServicio>();
-            
+            services.AddScoped<IMateriaServicio, MateriaServicio>();
+            services.AddScoped<IProfesorServicio, ProfesorServicio>(); 
+
 
 
             return services;

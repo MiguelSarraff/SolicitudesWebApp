@@ -11,11 +11,15 @@ namespace Data.Repositorio
     {
         private readonly ApplicationDbContext _db;
         public ICarreraRepositorio Carrera { get; private set; }
+        public IMateriaRepositorio Materia { get; private set; }
+        public IProfesorRepositorio Profesor { get; private set; }
 
         public UnidadTrabajo(ApplicationDbContext db)
         {
             _db = db;
             Carrera = new CarreraRepositorio(db); 
+            Materia = new MateriaRepositorio(db);
+            Profesor = new ProfesorRepositorio(db);
         }
         public void Dispose()
         {
