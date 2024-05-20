@@ -1,0 +1,49 @@
+<mat-toolbar color="primary">
+<span>Unphu Solicitudes</span>
+<button mat-icon-button (click)="sidenav.toggle();">
+<mat-icon>menu</mat-icon>
+</button>
+
+<span style="flex: 1 1 auto;;"></span>
+<label style="font-size: 14px; margin-right: 20px;">{{username}}</label>
+<button mat-icon-button (click)="cerraSesion();">
+<mat-icon>logout</mat-icon>
+</button>
+</mat-toolbar>
+
+
+<mat-sidenav-container>
+ <mat-sidenav #sidenav opened mode ="side" style="width: 220px; background: #198754;">
+    <mat-nav-list>
+        <mat-list-item routerLink="/layout/perfil">
+            <mat-icon matListItemIcon style="color: white;">account_circle</mat-icon>
+            <div matListItemTitle style="color:white;">Perfil</div>
+        </mat-list-item>
+    <mat-list-item routerLink="/layout/dashboard">
+        <mat-icon matListItemIcon style="color: white;">home</mat-icon>
+        <div matListItemTitle style="color:white;">Inicio</div>
+    </mat-list-item>
+    <mat-list-item routerLink="/layout/solicitudes">
+        <mat-icon matListItemIcon style="color: white;">mail_outline</mat-icon>
+        <div matListItemTitle style="color:white;">Solicitudes</div>
+    </mat-list-item>
+    <mat-list-item routerLink="/layout/carreras">
+        <mat-icon matListItemIcon style="color: white;">add_box</mat-icon>
+        <div matListItemTitle style="color:white;">Carreras</div>
+    </mat-list-item>
+    <mat-list-item routerLink="/layout/Profesores">
+        <mat-icon matListItemIcon style="color: white;">group_add</mat-icon>
+        <div matListItemTitle style="color:white;">Profesores</div>
+    </mat-list-item>
+  </mat-nav-list>
+ </mat-sidenav>
+ 
+ <mat-sidenav-content>
+    <div style="height: 90vh;">
+    <router-outlet></router-outlet>
+    </div>
+
+ </mat-sidenav-content>
+
+
+</mat-sidenav-container>
