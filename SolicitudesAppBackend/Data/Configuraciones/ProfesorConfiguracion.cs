@@ -13,7 +13,7 @@ namespace Data.Configuraciones
     {
         public void Configure(EntityTypeBuilder<Profesor> builder)
         {
-            builder.Property(x => x.ProfesorId).IsRequired();
+            builder.Property(x => x.Id).IsRequired();
             builder.Property(x => x.ProfesorNombres).IsRequired().HasMaxLength(60);
             builder.Property(x => x.ProfesorApellidos).IsRequired().HasMaxLength(60);
             builder.Property(x => x.Cedula).IsRequired(false).HasMaxLength(20);
@@ -21,7 +21,6 @@ namespace Data.Configuraciones
             builder.Property(x => x.Telefono).IsRequired(false).HasMaxLength(20);
             builder.Property(x => x.Email).IsRequired(false).HasMaxLength(100);
             builder.Property(x => x.Genero).IsRequired().HasColumnType("char").HasMaxLength(1);
-            builder.Property(x => x.FechaNacimiento).IsRequired();
             builder.Property(x => x.Estado).IsRequired();
 
             

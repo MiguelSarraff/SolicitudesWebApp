@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace BLL.Servicios
 {
     public class MateriaServicio : IMateriaServicio
@@ -28,11 +29,11 @@ namespace BLL.Servicios
             {
                 Materia materia = new Materia
                 {
-                    materiaNombre= modeloDto.materiaNombre,
-                    materiaCodigo = modeloDto.materiaCodigo,
-                    materiaCreditos = modeloDto.materiaCreditos,
+                    MateriaNombre = modeloDto.MateriaNombre,
+                    MateriaCodigo = modeloDto.MateriaCodigo,
+                    MateriaCreditos = modeloDto.MateriaCreditos,
                     CarreraId = modeloDto.CarreraId,
-                    estado = modeloDto.estado == 1 ? true : false,
+                    Estado = modeloDto.Estado == 1 ? true : false,
                     FechaCreacion = DateTime.Now,
                     FechaActualizacion = DateTime.Now,
 
@@ -58,10 +59,11 @@ namespace BLL.Servicios
                 if (materiaDb == null)
                     throw new TaskCanceledException("La materia no existe");
 
-                materiaDb.materiaNombre = modeloDto.materiaNombre;
-                materiaDb.materiaCodigo = modeloDto.materiaCodigo;
-                materiaDb.materiaCreditos = modeloDto.materiaCreditos;
-                materiaDb.estado = modeloDto.estado == 1 ? true : false;
+                materiaDb.MateriaNombre = modeloDto.MateriaNombre;
+                materiaDb.MateriaCodigo = modeloDto.MateriaCodigo;
+                materiaDb.MateriaCreditos = modeloDto.MateriaCreditos;
+                materiaDb.Estado = modeloDto.Estado == 1 ? true : false;
+                materiaDb.CarreraId = modeloDto.CarreraId;
                 _unidadTrabajo.Materia.Actualizar(materiaDb);
                 await _unidadTrabajo.Guardar();
             }
@@ -94,10 +96,10 @@ namespace BLL.Servicios
         {
             try
             {
-                var lista = await _unidadTrabajo.Materia.ObtenerTodos(incluirPropiedades: "Carrera",
-                                orderBy: e => e.OrderBy(e => e.materiaNombre));
+                var lista = await _unidadTrabajo.Materia.ObtenerTodos(incluirPropiedades:"Carrera",
+                                   orderBy: e => e.OrderBy(e => e.MateriaNombre));
+        
                 return _mapper.Map<IEnumerable<MateriaDto>>(lista);
-
             }
             catch (Exception)
             {
@@ -105,9 +107,8 @@ namespace BLL.Servicios
                 throw;
             }
         }
+
+
     }
 }
-
-
-    
 

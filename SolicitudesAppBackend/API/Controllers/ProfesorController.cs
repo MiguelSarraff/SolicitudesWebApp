@@ -81,13 +81,13 @@ namespace API.Controllers
  
         }
 
-        [HttpDelete("{ProfesorId:int}")]
+        [HttpDelete("{Id:int}")]
 
-        public async Task<IActionResult> Eliminar(int ProfesorId)
+        public async Task<IActionResult> Eliminar(int Id)
         {
             try
             {
-                await _profesorServicio.Remover(ProfesorId);
+                await _profesorServicio.Remover(Id);
                 _response.IsExitoso = true;
                 _response.StatusCode=HttpStatusCode.NoContent;
             }

@@ -21,37 +21,33 @@
             <table mat-table [dataSource]="dataSource">
           
               
-              <ng-container matColumnDef="ProfesorNombres">
+              <ng-container matColumnDef="profesorNombres">
                 <th mat-header-cell *matHeaderCellDef> Nombres </th>
                 <td mat-cell *matCellDef="let element"> {{element.profesorNombres}} </td>
               </ng-container>
-              <ng-container matColumnDef="ProfesorApellidos">
+              <ng-container matColumnDef="profesorApellidos">
                 <th mat-header-cell *matHeaderCellDef> Apellidos </th>
                 <td mat-cell *matCellDef="let element"> {{element.profesorApellidos}} </td>
               </ng-container>
-              <ng-container matColumnDef="Cedula">
+              <ng-container matColumnDef="cedula">
                 <th mat-header-cell *matHeaderCellDef> Cedula </th>
                 <td mat-cell *matCellDef="let element"> {{element.cedula}} </td>
               </ng-container>
-              <ng-container matColumnDef="Direccion">
+              <ng-container matColumnDef="direccion">
                 <th mat-header-cell *matHeaderCellDef> Direccion </th>
                 <td mat-cell *matCellDef="let element"> {{element.direccion}} </td>
               </ng-container>
-              <ng-container matColumnDef="Telefono">
+              <ng-container matColumnDef="telefono">
                 <th mat-header-cell *matHeaderCellDef> Telefono </th>
                 <td mat-cell *matCellDef="let element"> {{element.telefono}} </td>
               </ng-container>
-              <ng-container matColumnDef="Email">
+              <ng-container matColumnDef="email">
                 <th mat-header-cell *matHeaderCellDef> Email </th>
                 <td mat-cell *matCellDef="let element"> {{element.email}} </td>
               </ng-container>
-              <ng-container matColumnDef="Genero">
+              <ng-container matColumnDef="genero">
                 <th mat-header-cell *matHeaderCellDef> Genero </th>
                 <td mat-cell *matCellDef="let element"> {{element.genero}} </td>
-              </ng-container>
-              <ng-container matColumnDef="FechaNacimiento">
-                <th mat-header-cell *matHeaderCellDef> Fecha de nacimiento </th>
-                <td mat-cell *matCellDef="let element"> {{element.fechaNacimiento}}</td>
               </ng-container>
               <ng-container matColumnDef="estado">
                 <th mat-header-cell *matHeaderCellDef> Estado </th>

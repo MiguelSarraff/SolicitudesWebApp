@@ -10,13 +10,13 @@ namespace Models.Entidades
     public class Profesor
     {
         [Key]
-        public int ProfesorId { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Nombre es requerido")]
         [StringLength(60, MinimumLength = 1, ErrorMessage = "El Nombre del Profesor debe estar ente 1 y 60 caracteres")]
         public string ProfesorNombres { get; set; }
 
-        [Required(ErrorMessage ="Apellido es requerido")]
+        [Required(ErrorMessage = "Apellido es requerido")]
         [StringLength(60, MinimumLength = 1, ErrorMessage = "El Apellido del profesor debe estar ente 1 y 60 caracteres")]
         public string ProfesorApellidos { get; set; }
 
@@ -31,17 +31,10 @@ namespace Models.Entidades
 
         [StringLength(100, MinimumLength = 1, ErrorMessage = "El correo del profesor debe ser maximo 100 caracteres")]
         public string Email { get; set; }
-
-        
-      
         public char Genero { get; set; }
-        public bool Estado {  get; set; }
-        public DateTime FechaNacimiento { get; set; }
+        public bool Estado { get; set; }
         public DateTime FechaCreacion { get; set; }
         public DateTime FechaActualizacion { get; set; }
-
-
-
 
     }
 }

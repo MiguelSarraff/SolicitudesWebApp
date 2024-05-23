@@ -12,7 +12,7 @@ namespace Data.Repositorio
     {
         private readonly ApplicationDbContext _db;
 
-        public MateriaRepositorio(ApplicationDbContext db) : base (db) 
+        public MateriaRepositorio(ApplicationDbContext db) : base(db) 
         {
             _db = db;
         }
@@ -22,15 +22,12 @@ namespace Data.Repositorio
            var materiaDb = _db.Materias.FirstOrDefault(e => e.Id == materia.Id);
             if (materiaDb != null)
             {
-                materiaDb.materiaNombre = materia.materiaNombre;
-                materiaDb.materiaCodigo = materia.materiaCodigo;
-                materiaDb.materiaCreditos = materia.materiaCreditos;
-                materiaDb.estado = materia.estado;
+                materiaDb.MateriaNombre = materia.MateriaNombre;
+                materiaDb.MateriaCodigo = materia.MateriaCodigo;
+                materiaDb.MateriaCreditos = materia.MateriaCreditos;
+                materiaDb.Estado = materia.Estado;
                 materiaDb.FechaActualizacion = DateTime.Now;
                 materiaDb.CarreraId = materia.CarreraId;
-                
-                
-
                 _db.SaveChanges();
             }
         }

@@ -26,7 +26,7 @@ export class ProfesorService {
     return this.http.put<ApiResponse>(`${this.baseUrl}`, request);
     }
 
-    eliminar(ProfesorId: number) : Observable<ApiResponse>{
-      return this.http.delete<ApiResponse>(`${this.baseUrl}${ProfesorId}`);
+    eliminar(id: number) : Observable<ApiResponse>{
+      return this.http.delete<ApiResponse>(`${this.baseUrl}${id}`);
   }
 }

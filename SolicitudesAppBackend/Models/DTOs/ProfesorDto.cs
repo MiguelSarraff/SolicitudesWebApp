@@ -9,8 +9,8 @@ namespace Models.DTOs
 {
     public class ProfesorDto
     {
-        
-        public int ProfesorId { get; set; }
+        [Key]
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Nombre es requerido")]
         [StringLength(60, MinimumLength = 1, ErrorMessage = "El Nombre del Profesor debe estar ente 1 y 60 caracteres")]
@@ -33,7 +33,9 @@ namespace Models.DTOs
         public string Email { get; set; }
         public char Genero { get; set; }
         public int Estado { get; set; }
-        public DateTime FechaNacimiento { get; set; }
-     
+
+
+
+
     }
 }

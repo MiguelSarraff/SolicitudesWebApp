@@ -21,7 +21,7 @@ namespace Models.Entidades
         [StringLength(100, MinimumLength = 1, ErrorMessage = "El codigo de la carrera debe estar ente 1 y 100 caracteres")]
         public string CarreraCodigo { get; set; }
 
-        [Required]
+        
         public bool Estado { get; set; }
 
         public DateTime FechaCreacion { get; set; }

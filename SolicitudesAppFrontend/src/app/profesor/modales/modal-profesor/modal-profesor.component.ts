@@ -5,6 +5,7 @@ import { Profesor } from '../../interfaces/profesor';
 import { ProfesorService } from '../../servicios/profesor.service';
 import { CompartidoService } from 'src/app/compartido/compartido.service';
 
+
 @Component({
   selector: 'app-modal-profesor',
   templateUrl: './modal-profesor.component.html',
@@ -24,14 +25,13 @@ constructor(
   private _compartidoServicio: CompartidoService
 ){
   this.formProfesor = this.fb.group({
- ProfesorNombres: ['',Validators.required],
- ProfesorApellidos: ['',Validators.required],  
- Cedula: ['',],
- Direccion:['',],
- Telefono:['',],
- Email:['',],
- Genero:['M',],
- FechaNacimiento:['',Validators.required],
+ profesorNombres: ['',Validators.required],
+ profesorApellidos: ['',Validators.required],  
+ cedula: ['',Validators.required],
+ direccion:['',Validators.required],
+ telefono:['',Validators.required],
+ email:['',Validators.required],
+ genero:['M',Validators.required],
  estado:['1',Validators.required]
 });
 if(this.datosProfesor !=null)
@@ -45,14 +45,13 @@ if(this.datosProfesor !=null)
     if(this.datosProfesor !=null)
       {
         this.formProfesor.patchValue({
-          ProfesorNombres: this.datosProfesor.ProfesorNombres,
-          ProfesorApellidos: this.datosProfesor.ProfesorApellidos,
-          Cedula: this.datosProfesor.Direccion,
-          Direccion: this.datosProfesor.Direccion,
-          Telefono: this.datosProfesor.Telefono,
-          Email: this.datosProfesor.email,
-          Genero: this.datosProfesor.genero,
-          FechaNacimiento: this.datosProfesor.fechaNacimiento,
+          profesorNombres: this.datosProfesor.profesorNombres,
+          profesorApellidos: this.datosProfesor.profesorApellidos,
+          cedula: this.datosProfesor.cedula,
+          direccion: this.datosProfesor.direccion,
+          telefono: this.datosProfesor.telefono,
+          email: this.datosProfesor.email,
+          genero: this.datosProfesor.genero,
           estado: this.datosProfesor.estado.toString()
           
         })
@@ -62,15 +61,14 @@ if(this.datosProfesor !=null)
 crearModificarProfesor(){
 
  const profesor: Profesor = {
-    ProfesorId: this.datosProfesor == null ? 0 :this.datosProfesor.ProfesorId,
-    ProfesorNombres: this.formProfesor.value.profesorNombres,
-    ProfesorApellidos: this.formProfesor.value.profesorApellidos,
-    Cedula: this.formProfesor.value.cedula,
-    Direccion: this.formProfesor.value.direccion,
-    Telefono: this.formProfesor.value.telefono,
+    id: this.datosProfesor == null ? 0 :this.datosProfesor.id,
+    profesorNombres: this.formProfesor.value.profesorNombres,
+    profesorApellidos: this.formProfesor.value.profesorApellidos,
+    cedula: this.formProfesor.value.cedula,
+    direccion: this.formProfesor.value.direccion,
+    telefono: this.formProfesor.value.telefono,
     email: this.formProfesor.value.email,
     genero: this.formProfesor.value.genero,
-    fechaNacimiento: this.formProfesor.value.fechaNacimiento,
     estado: parseInt(this.formProfesor.value.estado)
 
  }
@@ -86,7 +84,7 @@ crearModificarProfesor(){
         this.modal.close("true"); 
       }    
       else
-        this._compartidoServicio.mostrarAlerta('No se pudo crear al Medico', 'Error!');
+        this._compartidoServicio.mostrarAlerta('No se pudo crear el profesor', 'Error!');
       },
       error: (e) => {
         this._compartidoServicio.mostrarAlerta(e.error.erroes,'Error!');

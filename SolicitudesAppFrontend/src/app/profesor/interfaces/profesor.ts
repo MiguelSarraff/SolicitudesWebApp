@@ -1,12 +1,11 @@
 export interface Profesor{
-    ProfesorId: number,
-    ProfesorNombres: string,
-    ProfesorApellidos: string,
-    Cedula: string,
-    Direccion:string,
-    Telefono:string,
+    id: number,
+    profesorNombres: string,
+    profesorApellidos: string,
+    cedula: string,
+    direccion:string,
+    telefono:string,
     email:string,
     genero:string,
     estado: number,
-    fechaNacimiento: string
 }

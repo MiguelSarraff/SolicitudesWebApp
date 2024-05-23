@@ -19,14 +19,13 @@ export class ListadoProfesorComponent implements OnInit, AfterViewInit {
 
   displayedColumns: string[] = [
 
-    'ProfesorNombres',
-    'ProfesorApellidos',
-    'Cedula',
-    'Direccion',
-    'Telefono',
-    'Email',
-    'Genero',
-    'FechaNacimiento',
+    'profesorNombres',
+    'profesorApellidos',
+    'cedula',
+    'direccion',
+    'telefono',
+    'email',
+    'genero',
     'estado',
     'acciones'
  ];
@@ -38,7 +37,7 @@ export class ListadoProfesorComponent implements OnInit, AfterViewInit {
 constructor(
  
   private _profesorServicio:ProfesorService,
-  private _compartidoService: CompartidoService,
+  private _compartidoServicio: CompartidoService,
   private dialog: MatDialog
 ){
 
@@ -53,13 +52,13 @@ ObtenerProfesores(){
           this.dataSource.paginator = this.paginator; 
         }
         else
-        this._compartidoService.mostrarAlerta(
+        this._compartidoServicio.mostrarAlerta(
           'No se encontraron datos',
           'Advertencia!'
         );
       },
       error: (e) =>{
-        this._compartidoService.mostrarAlerta(e.error.mensaje, 'Error!');
+        this._compartidoServicio.mostrarAlerta(e.error.mensaje, 'Error!');
       }
   });
   }
@@ -74,13 +73,46 @@ ObtenerProfesores(){
 
   }
 
-  editarProfesor(profesor: Profesor){
+  editarProfesor(profesor: Profesor) {
+    this.dialog
+        .open(ModalProfesorComponent, {disableClose: true, width:'600px',data: profesor })
+        .afterClosed()
+        .subscribe((resultado) =>{
+          if(resultado === 'true') this.ObtenerProfesores();
+        });
 
   }
 
   removerProfesor(profesor: Profesor){
-
+    Swal.fire({
+      title: 'Desea eliminar el Profesor?',
+      text: profesor.profesorNombres+' '+profesor.profesorApellidos,
+      icon:'warning',
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Si, eliminar', 
+      showCancelButton: true,
+      cancelButtonColor: '#d33',
+      cancelButtonText: 'No',
+    }).then((resultado) => {
+      if (resultado.isConfirmed){
+        this._profesorServicio.eliminar(profesor.id).subscribe({
+          next: (data) => {
+            if(data.isExitoso) {
+              this._compartidoServicio.mostrarAlerta('El medico fue eliminado', 'Completo');
+              this.ObtenerProfesores();
+            } else{
+              this._compartidoServicio.mostrarAlerta('No se pudo eliminar el medico','Error!');
+            } 
+          },
+          error: (e) => {
+            this._compartidoServicio.mostrarAlerta(e.error.mensaje, 'Error!');
+          }
+        })
+      }
+    })
   }
+  
+
 
   aplicarFiltroListado(event :Event){
     const filterValue = (event.target as HTMLInputElement).value;

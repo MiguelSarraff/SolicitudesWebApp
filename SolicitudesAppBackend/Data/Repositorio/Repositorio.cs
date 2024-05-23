@@ -28,6 +28,7 @@ namespace Data.Repositorio
         public async Task<T> ObtenerPrimero(Expression<Func<T, bool>> filtro = null, string incluirPropiedades = null)
         {
             IQueryable<T> query = _dbSet;
+          
             {
                 query = query.Where(filtro);
             }
@@ -44,6 +45,7 @@ namespace Data.Repositorio
         public async Task<IEnumerable<T>> ObtenerTodos(Expression<Func<T, bool>> filtro = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string incluirPropiedades = null)
         {
             IQueryable<T> query = _dbSet;
+            if (filtro != null)
             {
                 query = query.Where(filtro);
             }

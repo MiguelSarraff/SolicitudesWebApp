@@ -14,11 +14,11 @@ namespace Data.Configuraciones
         public void Configure(EntityTypeBuilder<Materia> builder)
         {
             builder.Property(x => x.Id).IsRequired();
-            builder.Property(x => x.materiaNombre).IsRequired().HasMaxLength(100);
-            builder.Property(x => x.materiaCodigo).IsRequired().HasMaxLength(100);
-            builder.Property(x => x.materiaCreditos).IsRequired().HasMaxLength(100);
-            builder.Property(x => x.CarreraId).IsRequired().HasMaxLength(100);
-            builder.Property(x => x.estado).IsRequired();
+            builder.Property(x => x.MateriaNombre).IsRequired().HasMaxLength(100);
+            builder.Property(x => x.MateriaCodigo).IsRequired().HasMaxLength(100);
+            builder.Property(x => x.MateriaCreditos).IsRequired().HasMaxLength(2);
+            builder.Property(x => x.Estado).IsRequired();
+            builder.Property(x => x.CarreraId).IsRequired();
 
             /* Relaciones */
 

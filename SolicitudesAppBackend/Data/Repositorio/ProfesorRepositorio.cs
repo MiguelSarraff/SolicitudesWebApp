@@ -19,7 +19,7 @@ namespace Data.Repositorio
 
         public void Actualizar(Profesor profesor)
         {
-           var profesorDb = _db.Profesores.FirstOrDefault(e => e.ProfesorId == profesor.ProfesorId);
+           var profesorDb = _db.Profesores.FirstOrDefault(e => e.Id == profesor.Id);
             if (profesorDb != null)
             {
                 profesorDb.ProfesorNombres = profesor.ProfesorNombres;
@@ -29,7 +29,6 @@ namespace Data.Repositorio
                 profesorDb.Telefono = profesor.Telefono;
                 profesorDb.Email = profesor.Email;
                 profesorDb.Genero = profesor.Genero;
-                profesorDb.FechaNacimiento = profesor.FechaNacimiento;
                 profesorDb.Estado = profesor.Estado;
                 profesorDb.FechaActualizacion = DateTime.Now;
                 _db.SaveChanges();

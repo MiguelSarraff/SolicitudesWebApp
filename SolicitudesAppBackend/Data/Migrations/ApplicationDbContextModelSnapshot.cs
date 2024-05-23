@@ -63,8 +63,10 @@ namespace Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CarreraId")
-                        .HasMaxLength(100)
                         .HasColumnType("int");
+
+                    b.Property<bool>("Estado")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime>("FechaActualizacion")
                         .HasColumnType("datetime2");
@@ -72,20 +74,17 @@ namespace Data.Migrations
                     b.Property<DateTime>("FechaCreacion")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("estado")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("materiaCodigo")
+                    b.Property<string>("MateriaCodigo")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("materiaCreditos")
+                    b.Property<string>("MateriaCreditos")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(2)
+                        .HasColumnType("nvarchar(2)");
 
-                    b.Property<string>("materiaNombre")
+                    b.Property<string>("MateriaNombre")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
@@ -99,11 +98,11 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Models.Entidades.Profesor", b =>
                 {
-                    b.Property<int>("ProfesorId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProfesorId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Cedula")
                         .HasMaxLength(20)
@@ -126,9 +125,6 @@ namespace Data.Migrations
                     b.Property<DateTime>("FechaCreacion")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("FechaNacimiento")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Genero")
                         .IsRequired()
                         .HasMaxLength(1)
@@ -148,7 +144,7 @@ namespace Data.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.HasKey("ProfesorId");
+                    b.HasKey("Id");
 
                     b.ToTable("Profesores");
                 });

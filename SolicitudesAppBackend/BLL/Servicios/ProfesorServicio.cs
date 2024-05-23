@@ -35,7 +35,6 @@ namespace BLL.Servicios
                     Telefono = modeloDto.Telefono,
                     Email = modeloDto.Email,
                     Genero = modeloDto.Genero,
-                    FechaNacimiento = modeloDto.FechaNacimiento,
                     Estado = modeloDto.Estado == 1? true: false,
                     FechaCreacion = DateTime.Now,
                     FechaActualizacion = DateTime.Now,
@@ -43,7 +42,7 @@ namespace BLL.Servicios
                 };
                 await _unidadTrabajo.Profesor.Agregar(profesor);
                 await _unidadTrabajo.Guardar();
-                if (profesor.ProfesorId == 0)
+                if (profesor.Id == 0)
                     throw new TaskCanceledException("El Profesor no se pudo crear");
                 return _mapper.Map<ProfesorDto>(profesor);
             }
@@ -58,7 +57,7 @@ namespace BLL.Servicios
         {
             try
             {
-                var ProfesorDb = await _unidadTrabajo.Profesor.ObtenerPrimero(e => e.ProfesorId == modeloDto.ProfesorId);
+                var ProfesorDb = await _unidadTrabajo.Profesor.ObtenerPrimero(e => e.Id == modeloDto.Id);
                 if (ProfesorDb == null)
                     throw new TaskCanceledException("El Profesor no existe");
 
@@ -69,7 +68,6 @@ namespace BLL.Servicios
                 ProfesorDb.Telefono = modeloDto.Telefono;
                 ProfesorDb.Email = modeloDto.Email;
                 ProfesorDb.Genero = modeloDto.Genero;
-                ProfesorDb.FechaNacimiento = modeloDto.FechaNacimiento;
                 ProfesorDb.Estado = modeloDto.Estado == 1 ? true : false;
                 _unidadTrabajo.Profesor.Actualizar(ProfesorDb);
                 await _unidadTrabajo.Guardar();
@@ -81,11 +79,11 @@ namespace BLL.Servicios
             }
         }
 
-        public async Task Remover(int ProfesorId)
+        public async Task Remover(int Id)
         {
             try
             {
-                var ProfesorDb = await _unidadTrabajo.Profesor.ObtenerPrimero(e => e.ProfesorId == ProfesorId);
+                var ProfesorDb = await _unidadTrabajo.Profesor.ObtenerPrimero(e => e.Id == Id);
                 if (ProfesorDb == null)
                     throw new TaskCanceledException("El Profesor no existe");
                 _unidadTrabajo.Profesor.Remover(ProfesorDb);
