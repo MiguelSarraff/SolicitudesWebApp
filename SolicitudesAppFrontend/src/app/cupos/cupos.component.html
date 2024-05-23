@@ -1,0 +1,36 @@
+<div class="container mt-5">
+    <h2>Solicitud de cupos</h2>
+    <form>
+      <div class="mb-3">
+        <label for="subject" class="form-label">Asignatura</label>
+        <select id="subject" class="form-select">
+          <option selected>Seleccione una asignatura</option>
+          <option *ngFor="let subject of subjects" [value]="subject.id">{{ subject.name }}</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label for="teacher" class="form-label">Profesor</label>
+        <select id="teacher" class="form-select">
+          <option selected>Seleccione un profesor</option>
+          <option *ngFor="let teacher of teachers" [value]="teacher.id">{{ teacher.name }}</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label for="schedule" class="form-label">Horario</label>
+        <select id="schedule" class="form-select">
+          <option selected>Seleccione un horario</option>
+          <option *ngFor="let schedule of schedules" [value]="schedule.id">{{ schedule.name }}</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label for="comments" class="form-label">Comentarios</label>
+        <textarea id="comments" class="form-control" rows="3"></textarea>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+  
