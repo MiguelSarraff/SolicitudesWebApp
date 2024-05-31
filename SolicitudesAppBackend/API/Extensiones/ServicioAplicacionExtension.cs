@@ -78,7 +78,12 @@ namespace API.Extensiones
 
             services.AddScoped<ICarreraServicio, CarreraServicio>();
             services.AddScoped<IMateriaServicio, MateriaServicio>();
-            services.AddScoped<IProfesorServicio, ProfesorServicio>(); 
+            services.AddScoped<IProfesorServicio, ProfesorServicio>();
+            services.AddScoped<IEstudianteServicio, EstudianteServicio>();
+            services.AddScoped<ISeccionServicio, SeccionServicio>();
+            services.AddScoped<ISolicitudServicio, SolicitudServicio>();
+
+
 
 
 

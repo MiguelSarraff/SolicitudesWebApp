@@ -13,6 +13,9 @@ namespace Data.Repositorio
         public ICarreraRepositorio Carrera { get; private set; }
         public IMateriaRepositorio Materia { get; private set; }
         public IProfesorRepositorio Profesor { get; private set; }
+        public IEstudianteRepositorio Estudiante { get; private set; }
+        public ISeccionRepositorio Seccion { get; private set; }
+        public ISolicitudRepositorio Solicitud { get; private set; }
 
         public UnidadTrabajo(ApplicationDbContext db)
         {
@@ -20,6 +23,9 @@ namespace Data.Repositorio
             Carrera = new CarreraRepositorio(db); 
             Materia = new MateriaRepositorio(db);
             Profesor = new ProfesorRepositorio(db);
+            Estudiante = new EstudianteRepositorio(db);
+            Seccion = new SeccionRepositorio(db);
+            Solicitud = new SolicitudRepositorio(db);
         }
         public void Dispose()
         {

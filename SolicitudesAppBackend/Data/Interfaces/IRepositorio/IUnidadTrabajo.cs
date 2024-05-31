@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.Repositorio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,11 @@ namespace Data.Interfaces.IRepositorio
 
         IProfesorRepositorio Profesor { get; }
 
+        IEstudianteRepositorio Estudiante { get; }
 
+        ISeccionRepositorio Seccion { get; }
+
+        ISolicitudRepositorio Solicitud { get; }
 
         Task Guardar();
     }
