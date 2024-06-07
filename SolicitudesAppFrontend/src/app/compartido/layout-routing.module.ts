@@ -9,8 +9,12 @@ import { ListadoCarreraComponent } from '../carrera/pages/listado-carrera/listad
 import {} from '../carrera/carrera.module';
 import {} from '../profesor/profesor.module';
 import {} from '../materia/materia.module';
+import {} from '../estudiante/estudiante.module';
+import {} from  '../seccion/seccion.module'
 import { ListadoProfesorComponent } from '../profesor/pages/listado-profesor/listado-profesor.component';
 import { ListadoMateriaComponent } from '../materia/pages/listado-materia/listado-materia.component';
+import { ListadoEstudianteComponent } from '../estudiante/pages/listado-estudiante/listado-estudiante.component';
+import { ListadoSeccionComponent } from '../seccion/pages/listado-seccion/listado-seccion.component';
 
 
 const routes: Routes = [
@@ -23,6 +27,8 @@ const routes: Routes = [
     {path: 'perfil', component:PerfilComponent,pathMatch:'full'},
     {path: 'Profesores', component:ListadoProfesorComponent, pathMatch: 'full'},
     {path: 'materias', component:ListadoMateriaComponent, pathMatch: 'full'},
+    {path: 'estudiantes', component:ListadoEstudianteComponent, pathMatch: 'full'},
+    {path: 'secciones', component:ListadoSeccionComponent, pathMatch: 'full'},
     {path: '**',redirectTo: '', pathMatch:'full'}
    ]
  } 

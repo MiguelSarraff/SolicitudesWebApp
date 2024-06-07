@@ -13,7 +13,7 @@
 
 
 <mat-sidenav-container>
- <mat-sidenav #sidenav opened mode ="side" style="width: 220px; background: #198754;">
+ <mat-sidenav #sidenav opened mode ="side" style="width: 220px; background: #1c84da;">
     <mat-nav-list>
         <mat-list-item routerLink="/layout/perfil">
             <mat-icon matListItemIcon style="color: white;">account_circle</mat-icon>
@@ -33,11 +33,19 @@
     </mat-list-item>
     <mat-list-item routerLink="/layout/materias">
         <mat-icon matListItemIcon style="color: white;">assignment</mat-icon>
-        <div matListItemTitle style="color:white;">materias</div>
+        <div matListItemTitle style="color:white;">Materias</div>
+    </mat-list-item>
+    <mat-list-item routerLink="/layout/secciones">
+        <mat-icon matListItemIcon style="color: white;">class</mat-icon>
+        <div matListItemTitle style="color:white;">Secciones</div>
     </mat-list-item>
     <mat-list-item routerLink="/layout/Profesores">
         <mat-icon matListItemIcon style="color: white;">group_add</mat-icon>
         <div matListItemTitle style="color:white;">Profesores</div>
+    </mat-list-item>
+    <mat-list-item routerLink="/layout/estudiantes">
+        <mat-icon matListItemIcon style="color: white;">school</mat-icon>
+        <div matListItemTitle style="color:white;">Estudiantes</div>
     </mat-list-item>
   </mat-nav-list>
  </mat-sidenav>
