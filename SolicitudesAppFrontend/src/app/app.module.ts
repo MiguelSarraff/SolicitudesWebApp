@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UsuarioModule } from './usuario/usuario.module';
+import { CuposComponent } from './cupos/cupos.component';
+import { RevisionCalificacionesComponent } from './revision-calificaciones/revision-calificaciones.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CuposComponent,
+    RevisionCalificacionesComponent
   ],
   imports: [
     BrowserModule,
@@ -20,5 +24,5 @@ import { UsuarioModule } from './usuario/usuario.module';
   ],
   providers: [],
   bootstrap: [AppComponent]
-})
+  })
 export class AppModule { }
